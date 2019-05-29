@@ -1,3 +1,17 @@
 <p>
-  home works!
-</p>
+  
+
+  <div>
+   <form [formGroup] = "formdata" (ngSubmit) = "onClickSubmit(formdata.value)">
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" class="form-control" id="email" name = "emailid" placeholder = "emailid" formControlName="email" />
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" name="passwd"  placeholder = "passwd" formControlName = "password">
+    </div>
+    
+    <button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>

@@ -1,4 +1,10 @@
 <p>
-  about works!
-</p>
-<app-about-innr></app-about-innr>
+  Welcome {{name}} <button  class="btn btn-default" (click) = "logout()">Logout</button>
+
+  <ul class="list-group">
+    <li class="list-group-item" style="padding: 5px;" *ngFor="let item of users; let i = index">
+      <img src="{{item.avatar}}" />
+        {{item.first_name}} {{item.last_name}} ({{item.email }} )
+    </li>
+  </ul>
+<!-- <app-about-innr></app-about-innr> -->
